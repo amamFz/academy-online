@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -16,8 +15,6 @@ const VideoThumbnail: React.FC = () => {
   const openModal = () => {
     setIsOpen(true);
   };
-
-  const thumbnailUrl = "https://img.youtube.com/vi/mkDokl4YhbA/hqdefault.jpg";
 
   return (
     <div className="relative w-full">
