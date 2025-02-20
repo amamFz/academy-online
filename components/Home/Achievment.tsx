@@ -1,6 +1,15 @@
 import { achievments } from "@/data/achievment";
 import Image from "next/image";
 
+const color: Record<string, string> = {
+  "bg-secondary/10": "bg-secondary/10",
+  "bg-orange-500/10": "bg-orange-500/10",
+  "bg-red/10": "bg-red/10",
+  "bg-blue-500/10": "bg-blue-500/10",
+} as const;
+
+type ColorKeys = keyof typeof color;
+
 const Achievment = () => {
   return (
     <section className="py-44">
@@ -25,7 +34,11 @@ const Achievment = () => {
                     className="mb-6 flex items-center gap-4"
                     key={achievment.id}
                   >
-                    <div className={`flex rounded-full ${achievment.bg} p-4`}>
+                    <div
+                      className={`flex rounded-full ${
+                        color[achievment.bg as ColorKeys]
+                      } p-4`}
+                    >
                       <div className={`text-4xl ${achievment.textColor}`}>
                         <Icon className="w-8 h-8" />
                       </div>

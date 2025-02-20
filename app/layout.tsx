@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Nav/Header";
+import Footer from "@/components/Footer";
 
 const quicksand = Quicksand({
   variable: "--font-inter",
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={`${quicksand.variable} antialiased`}>
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );
