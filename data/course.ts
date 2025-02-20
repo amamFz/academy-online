@@ -1,5 +1,6 @@
-import { GoArrowUpRight, GoStarFill } from "react-icons/go";
 import { IconType } from "react-icons/lib";
+import { GoArrowUpRight, GoStarFill } from "react-icons/go";
+import { PiStarFill, PiCheck, PiPlayFill } from "react-icons/pi";
 
 interface Course {
   id: number;
@@ -10,6 +11,33 @@ interface Course {
   rating: string;
   instruktur: string;
   icon: IconType;
+}
+
+interface dataButton {
+  id?: number;
+  tag: string;
+}
+
+interface courseInformation {
+  id: number;
+  check: IconType;
+  courseInformation: string;
+}
+
+interface Lessons {
+  id: number;
+  title: string;
+  time: string;
+  playIcon: IconType;
+}
+
+interface Review {
+  id: number;
+  image: string;
+  name: string;
+  job: string;
+  review: string;
+  rating: IconType;
 }
 
 export const course: Course[] = [
@@ -132,5 +160,153 @@ export const course: Course[] = [
     rating: "(4.5 Reviews)",
     instruktur: "Sawpawlo Mark",
     icon: GoArrowUpRight,
+  },
+];
+
+export const dataButton: dataButton[] = [
+  {
+    id: 1,
+    tag: "Overview",
+  },
+  {
+    id: 2,
+    tag: "Lessons",
+  },
+  {
+    id: 3,
+    tag: "Review",
+  },
+];
+export const courseInformation: courseInformation[] = [
+  {
+    id: 1,
+    check: PiCheck,
+    courseInformation: "Work with color & Gradients & Grids",
+  },
+  {
+    id: 2,
+    check: PiCheck,
+    courseInformation: "All the useful shortcuts",
+  },
+  {
+    id: 3,
+    check: PiCheck,
+    courseInformation: "Be able to create Flyers, Brochures, Advertisements",
+  },
+  {
+    id: 4,
+    check: PiCheck,
+    courseInformation: "How to work with Images & Text",
+  },
+];
+
+export const lessons: Lessons[] = [
+  {
+    id: 1,
+    title: "Setup Project",
+    time: "5:00",
+    playIcon: PiPlayFill,
+  },
+  {
+    id: 2,
+    title: "Setup Project",
+    time: "5:00",
+    playIcon: PiPlayFill,
+  },
+  {
+    id: 3,
+    title: "Setup Project",
+    time: "5:00",
+    playIcon: PiPlayFill,
+  },
+  {
+    id: 4,
+    title: "Setup Project",
+    time: "5:00",
+    playIcon: PiPlayFill,
+  },
+];
+
+export const review: Review[] = [
+  {
+    id: 1,
+    image: "/images/user/user-01.png",
+    name: "David Heilo",
+    job: "Designer",
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium excepturi corrupti consectetur doloribus. Quas, mollitia vero.",
+    rating: PiStarFill,
+  },
+  {
+    id: 2,
+    image: "/images/user/user-02.png",
+    name: "Jenny Wilson",
+    job: "Product Designer",
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium excepturi corrupti consectetur doloribus. Quas, mollitia vero.",
+    rating: PiStarFill,
+  },
+  {
+    id: 3,
+    image: "/images/user/user-02.png",
+    name: "Jenny Wilson",
+    job: "Product Designer",
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium excepturi corrupti consectetur doloribus. Quas, mollitia vero.",
+    rating: PiStarFill,
+  },
+  {
+    id: 4,
+    image: "/images/user/user-02.png",
+    name: "Jenny Wilson",
+    job: "Product Designer",
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium excepturi corrupti consectetur doloribus. Quas, mollitia vero.",
+    rating: PiStarFill,
+  },
+  {
+    id: 5,
+    image: "/images/user/user-02.png",
+    name: "Jenny Wilson",
+    job: "Product Designer",
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium excepturi corrupti consectetur doloribus. Quas, mollitia vero.",
+    rating: PiStarFill,
+  },
+  {
+    id: 6,
+    image: "/images/user/user-02.png",
+    name: "Jenny Wilson",
+    job: "Product Designer",
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium excepturi corrupti consectetur doloribus. Quas, mollitia vero.",
+    rating: PiStarFill,
+  },
+  {
+    id: 7,
+    image: "/images/user/user-02.png",
+    name: "Jenny Wilson",
+    job: "Product Designer",
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium excepturi corrupti consectetur doloribus. Quas, mollitia vero.",
+    rating: PiStarFill,
+  },
+  {
+    id: 8,
+    image: "/images/user/user-02.png",
+    name: "Jenny Wilson",
+    job: "Product Designer",
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium excepturi corrupti consectetur doloribus. Quas, mollitia vero.",
+    rating: PiStarFill,
+  },
+  {
+    id: 9,
+    image: "/images/user/user-02.png",
+    name: "Jenny Wilson",
+    job: "Product Designer",
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium excepturi corrupti consectetur doloribus. Quas, mollitia vero.",
+    rating: PiStarFill,
   },
 ];
