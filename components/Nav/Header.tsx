@@ -5,6 +5,7 @@ import Nav from "./Nav";
 import { Button } from "../ui/button";
 import MobileNav from "./MobileNav";
 import { useRouter } from "next/navigation";
+import LogoLearning from "@/public/images/logo/Logo-learning.png";
 
 const Header = () => {
   const router = useRouter();
@@ -13,7 +14,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/">
           <Image
-            src={"/images/logo/logo-learning.png"}
+            src={LogoLearning}
             alt="Logo"
             priority
             quality={100}
