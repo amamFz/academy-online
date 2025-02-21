@@ -2,7 +2,13 @@ import { BsBarChart, BsBook, BsClockHistory } from "react-icons/bs";
 import { PiCertificateLight } from "react-icons/pi";
 import { Button } from "../ui/button";
 
-export default function SidebarCourseMobile({ onClick }) {
+interface SidebarCourseMobileProps {
+  onClick: () => void;
+}
+
+export default function SidebarCourseMobile({
+  onClick,
+}: SidebarCourseMobileProps) {
   return (
     <div className="mb-6 block rounded-lg p-6 shadow-md lg:hidden">
       <div className="">

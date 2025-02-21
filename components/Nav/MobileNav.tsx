@@ -4,7 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
 import Link from "next/link";
 import { CiMenuBurger } from "react-icons/ci";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Button } from "../ui/button";
 
 const links = [
@@ -28,6 +28,8 @@ const links = [
 
 const MobileNav = () => {
   const pathname = usePathname();
+  const router = useRouter();
+
   return (
     <Sheet>
       <SheetTrigger>
@@ -66,8 +68,15 @@ const MobileNav = () => {
             })}
           </nav>
           <div className="flex flex-col items-center justify-center gap-6">
-            <Button variant={"outline"}>Sign In</Button>
-            <Button variant={"default"}>Sign Up</Button>
+            <Button variant={"outline"} onClick={() => router.push("/login")}>
+              Sign In
+            </Button>
+            <Button
+              variant={"default"}
+              onClick={() => router.push("/registrasi")}
+            >
+              Sign Up
+            </Button>
           </div>
         </div>
       </SheetContent>

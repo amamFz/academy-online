@@ -2,7 +2,11 @@ import { BsBarChart, BsBook, BsClockHistory } from "react-icons/bs";
 import { PiCertificateLight } from "react-icons/pi";
 import { Button } from "../ui/button";
 
-export default function SidebarCourse({ onClick }) {
+interface SidebarCourseProps {
+  onClick: () => void;
+}
+
+export default function SidebarCourse({ onClick }: SidebarCourseProps) {
   return (
     <div className="sticky top-0 hidden w-full self-start rounded-lg shadow-md lg:block lg:w-1/4">
       <div className="px-6 py-12">
