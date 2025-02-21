@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import { Button } from "../ui/button";
 import MobileNav from "./MobileNav";
 import { useRouter } from "next/navigation";
-import LogoLearning from "@/public/images/logo/Logo-learning.png";
+const LogoLearning = "@/public/images/logo/Logo-learning.png";
 
 const Header = () => {
   const router = useRouter();
