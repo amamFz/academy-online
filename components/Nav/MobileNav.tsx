@@ -40,7 +40,7 @@ const MobileNav = () => {
         <div className="mb-24 mt-6">
           <Link href="/">
             <Image
-              src={"/images/logo/logo-learning.png"}
+              src="/images/logo/Logo-learning.png"
               alt="Logo"
               priority
               quality={100}

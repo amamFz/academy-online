@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="mb-10 md:mb-0">
             <Link href="/" className="relative flex items-center">
               <Image
-                src={"/images/logo/logo-learning.png"}
+                src="/images/logo/Logo-learning.png"
                 alt="Logo"
                 width={150}
                 height={150}
